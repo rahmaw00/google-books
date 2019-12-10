@@ -1,0 +1,12 @@
+body {
+  background-color: cornsilk;
+  font-family: "Georgia", Times, serif;
+}
+
+h3, h4 {
+  text-align: center;
+}
+
+#pages {
+  text-align: left;
+}

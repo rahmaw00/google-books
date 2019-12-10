@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <% @results.each do |result| %>
+
+      <div class='book-result'>
+        <h3><%= result.title %></h3>
+        <h4><%= result.authors %></h4>
+        <img src='<%= result.image_link %>'/>
+        <h3 id="pages"> Pages: <%= result.page_count %> </h3>
+        <a href='<% result.info_link %>'> More Info </a>
+      </div>
+
+    <% end %>
+  </body>
+</html>
